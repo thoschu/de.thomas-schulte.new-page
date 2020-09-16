@@ -6,11 +6,21 @@
   />
 </header>
 <main>
+  <div class="p-d-inline">Displayed as inline.</div>
+  <div class="p-d-flex">Displayed as a flexbox container.</div>
+  <div class="p-d-block p-d-lg-inline">Inline for larger screens and block for others.</div>
+  <div class="p-d-md-none">Visible on a Small Screen</div>
+  <div class="p-d-none p-d-md-inline-flex">Hidden on a Small Screen</div>
+  <div class="p-d-none p-print-block">Only visible when printed.</div>
+  <div class="p-d-block p-print-none">Not available for printing.</div>
+  <div class="p-shadow-1">A</div>
+  <div class="p-shadow-24">B</div>
+</main>
+<footer>
   <span>Welcome {{info}}</span>
   &nbsp;
   <label>
     <input type="text" [(ngModel)]="info">
   </label>
-</main>
-<footer></footer>
+</footer>
 <router-outlet></router-outlet>
